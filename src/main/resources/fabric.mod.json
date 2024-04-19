@@ -18,9 +18,15 @@
 		"main": [
 			"me.officiallydragon.endified.Endified"
 		],
+		"client": [
+			"me.officiallydragon.endified.EndifiedClient"
+		],
 		"fabric-datagen": [
 			"me.officiallydragon.endified.EndifiedDataGenerator"
-		]
+		],
+		"server": [],
+		"fabric-gametest": [],
+		"preLaunch": []
 	},
 	"mixins": [
 		"endified.mixins.json"
