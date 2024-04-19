@@ -1,4 +1,10 @@
 package me.officiallydragon.endified;
 
-public class EndifiedClient {
+import net.fabricmc.api.ClientModInitializer;
+
+public class EndifiedClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+
+    }
 }
