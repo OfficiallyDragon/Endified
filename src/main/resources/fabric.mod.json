@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "endified",
+	"version": "${version}",
+	"name": "Endified",
+	"description": "Endified is just another end overhaul mod!",
+	"authors": [
+		"OfficiallyDragon"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/OfficiallyDragon/endified"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/endified/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.officiallydragon.endified.Endified"
+		],
+		"fabric-datagen": [
+			"me.officiallydragon.endified.EndifiedDataGenerator"
+		]
+	},
+	"mixins": [
+		"endified.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
