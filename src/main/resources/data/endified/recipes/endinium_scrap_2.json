@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond"
+  },
+  "base": {
+    "item": "endified:endinium_scrap_1"
+  },
+  "result": {
+    "item": "endified:endinium_scrap_2"
+  },
+  "template": {
+    "item": "endified:endinium_upgrade_template"
+  }
+}

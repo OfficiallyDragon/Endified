@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final Block ENDINIUM_BLOCK = registerBlock("endinium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block ENDINIUM_DEBRIES = registerBlock("endinium_debries",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.AMETHYST_CLUSTER)));
+            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(25.0f,1200.0f)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

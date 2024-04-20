@@ -15,9 +15,16 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified"))
                     .icon(() -> new ItemStack(ModItems.ENDINIUM_CARBIDE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ENDINIUM_CARBIDE);
-                        entries.add(ModItems.ENDINIUM_SCRAP);
+                        entries.add(ModItems.ENDINIUM_SCRAP_0);
+                        entries.add(ModItems.ENDINIUM_SCRAP_1);
+                        entries.add(ModItems.ENDINIUM_SCRAP_2);
+                        entries.add(ModItems.ENDINIUM_SCRAP_3);
+                        entries.add(ModItems.ENDINIUM_SCRAP_4);
+                        entries.add(ModItems.ENDINIUM_UPGRADE_TEMPLATE);
+
                         entries.add(ModBlocks.ENDINIUM_BLOCK);
                         entries.add(ModBlocks.ENDINIUM_DEBRIES);
+
                     }).build());
     public static void registerItemGroups() {
         Endified.LOGGER.info("Register Item Groups for " + Endified.MOD_ID);

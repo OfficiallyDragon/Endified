@@ -11,11 +11,22 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item ENDINIUM_SCRAP = registerItem("endinium_scrap", new Item(new FabricItemSettings()));
+    public static final Item ENDINIUM_UPGRADE_TEMPLATE = registerItem("endinium_upgrade_template", new Item(new FabricItemSettings()));
+    public static final Item ENDINIUM_SCRAP_0 = registerItem("endinium_scrap_0", new Item(new FabricItemSettings()));
+    public static final Item ENDINIUM_SCRAP_1 = registerItem("endinium_scrap_1", new Item(new FabricItemSettings()));
+    public static final Item ENDINIUM_SCRAP_2 = registerItem("endinium_scrap_2", new Item(new FabricItemSettings()));
+    public static final Item ENDINIUM_SCRAP_3 = registerItem("endinium_scrap_3", new Item(new FabricItemSettings()));
+    public static final Item ENDINIUM_SCRAP_4 = registerItem("endinium_scrap_4", new Item(new FabricItemSettings()));
     public static final Item ENDINIUM_CARBIDE = registerItem("endinium_carbide", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(ENDINIUM_SCRAP);
+        entries.add(ENDINIUM_SCRAP_0);
+        entries.add(ENDINIUM_SCRAP_1);
+        entries.add(ENDINIUM_SCRAP_2);
+        entries.add(ENDINIUM_SCRAP_3);
+        entries.add(ENDINIUM_SCRAP_4);
+        entries.add(ENDINIUM_UPGRADE_TEMPLATE);
+
         entries.add(ENDINIUM_CARBIDE);
     }
 

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "endified:endinium_block"
+    }
+  ],
+  "result": {
+    "item": "endified:endinium_carbide",
+    "count": 9
+  }
+}

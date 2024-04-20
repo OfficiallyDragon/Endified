@@ -1,6 +1,12 @@
 {
-  "item.endified.endinium_scrap": "Endinium Scrap",
+  "item.endified.endinium_scrap_0": "Endinium Scrap",
+  "item.endified.endinium_scrap_1": "Endinium Scrap",
+  "item.endified.endinium_scrap_2": "Endinium Scrap",
+  "item.endified.endinium_scrap_3": "Endinium Scrap",
+  "item.endified.endinium_scrap_4": "Endinium Scrap",
   "item.endified.endinium_carbide": "Endinium Carbide",
+  "item.endified.endinium_upgrade_template": "Endinium Smithing Upgrade",
+
 
   "block.endified.endinium_block": "Block of Endinium",
   "block.endified.endinium_debries": "Endinium Debries",

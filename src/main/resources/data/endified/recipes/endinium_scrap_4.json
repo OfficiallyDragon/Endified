@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:gold_ingot"
+  },
+  "base": {
+    "item": "endified:endinium_scrap_3"
+  },
+  "result": {
+    "item": "endified:endinium_scrap_4"
+  },
+  "template": {
+    "item": "endified:endinium_upgrade_template"
+  }
+}
