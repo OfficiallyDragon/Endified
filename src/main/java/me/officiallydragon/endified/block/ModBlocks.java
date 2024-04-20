@@ -18,7 +18,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block ENDINIUM_DEBRIES = registerBlock("endinium_debries",
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(25.0f,1200.0f)));
-
+    public static final Block SULFER_ORE = registerBlock("sulfer_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE).sounds(BlockSoundGroup.TUFF).strength(15.0f,200.0f)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Endified.MOD_ID, name), block);

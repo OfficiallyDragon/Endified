@@ -6,10 +6,17 @@
   "item.endified.endinium_scrap_4": "Endinium Scrap",
   "item.endified.endinium_carbide": "Endinium Carbide",
   "item.endified.endinium_upgrade_template": "Endinium Smithing Upgrade",
+  "item.endified.ore_detector": "Ore Detector",
+  "item.endified.end_berries": "Endified Berries",
+  "item.endified.raw_sulfer": "Raw Sulfer",
 
 
   "block.endified.endinium_block": "Block of Endinium",
   "block.endified.endinium_debries": "Endinium Debries",
+  "block.endified.sulfer_ore": "Sulfer Ore",
 
-  "itemgroup.endified": "Endified"
+  "itemgroup.endified": "Endified",
+  "itemgroup.endified_tools": "Endified Tools",
+  "itemgroup.endified_plants": "Endified Organics",
+  "itemgroup.endified_blocks": "Endified Blocks"
 }

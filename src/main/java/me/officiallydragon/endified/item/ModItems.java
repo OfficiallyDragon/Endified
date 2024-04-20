@@ -1,6 +1,7 @@
 package me.officiallydragon.endified.item;
 
 import me.officiallydragon.endified.Endified;
+import me.officiallydragon.endified.item.custom.OreDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -18,6 +19,9 @@ public class ModItems {
     public static final Item ENDINIUM_SCRAP_3 = registerItem("endinium_scrap_3", new Item(new FabricItemSettings()));
     public static final Item ENDINIUM_SCRAP_4 = registerItem("endinium_scrap_4", new Item(new FabricItemSettings()));
     public static final Item ENDINIUM_CARBIDE = registerItem("endinium_carbide", new Item(new FabricItemSettings()));
+    public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings().maxDamage(100)));
+    public static final Item END_BERRIES = registerItem("end_berries", new Item(new FabricItemSettings().food(ModFoodComponents.END_BERRIES)));
+    public static final Item RAW_SULFER = registerItem("raw_sulfer", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENDINIUM_SCRAP_0);
@@ -26,7 +30,6 @@ public class ModItems {
         entries.add(ENDINIUM_SCRAP_3);
         entries.add(ENDINIUM_SCRAP_4);
         entries.add(ENDINIUM_UPGRADE_TEMPLATE);
-
         entries.add(ENDINIUM_CARBIDE);
     }
 

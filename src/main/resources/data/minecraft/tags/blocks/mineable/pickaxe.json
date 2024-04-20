@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "endified:endinium_block",
-    "endified:endinium_debries"
+    "endified:endinium_debries",
+    "endified:sulfer_ore"
+
   ]
 }
