@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ENDINIUM_SCRAP = registerItem("endinium_scrap", new Item(new FabricItemSettings()));
+    public static final Item ENDINIUM_CARBIDE = registerItem("endinium_carbide", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENDINIUM_SCRAP);
+        entries.add(ENDINIUM_CARBIDE);
     }
 
 
@@ -23,7 +25,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Endified.LOGGER.info("Registering mod items for " + Endified.MOD_ID);
+        Endified.LOGGER.info("Registering Mod Items for " + Endified.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }

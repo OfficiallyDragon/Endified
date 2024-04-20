@@ -1,3 +1,9 @@
 {
-  "item.endified.endinium_scrap": "Endinium Scrap"
+  "item.endified.endinium_scrap": "Endinium Scrap",
+  "item.endified.endinium_carbide": "Endinium Carbide",
+
+  "block.endified.endinium_block": "Block of Endinium",
+  "block.endified.endinium_debries": "Endinium Debries",
+
+  "itemgroup.endified": "Endified"
 }

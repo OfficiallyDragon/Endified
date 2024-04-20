@@ -1,5 +1,7 @@
 package me.officiallydragon.endified;
 
+import me.officiallydragon.endified.block.ModBlocks;
+import me.officiallydragon.endified.item.ModItemGroups;
 import me.officiallydragon.endified.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,7 +14,8 @@ public class Endified implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
