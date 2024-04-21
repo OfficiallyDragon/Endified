@@ -1,0 +1,5 @@
+// 1.20.1	2024-04-21T19:43:56.2264209	Endified/Tags for minecraft:block
+5a0a89d8b70bc257b6232a5d3d103504c6e86573 data\minecraft\tags\blocks\mineable\pickaxe.json
+2fcca148b9d9d40dc9be3c3ddc8a4cfc2d76f588 data\endified\tags\blocks\ore_detector_detectable_blocks.json
+5a0a89d8b70bc257b6232a5d3d103504c6e86573 data\minecraft\tags\blocks\needs_iron_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json

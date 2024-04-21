@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.4,
+  "group": "endinium",
+  "ingredient": {
+    "item": "endified:endinium_debries"
+  },
+  "result": "endified:endinium_scrap_0"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "endinium",
+  "ingredient": {
+    "item": "endified:endinium_debries"
+  },
+  "result": "endified:endinium_scrap_0"
+}

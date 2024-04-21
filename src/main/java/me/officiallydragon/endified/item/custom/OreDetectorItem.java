@@ -1,5 +1,6 @@
 package me.officiallydragon.endified.item.custom;
 
+import me.officiallydragon.endified.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -48,6 +49,6 @@ public class OreDetectorItem extends Item {
     }
 
     private boolean isValuabeBlock(BlockState state) {
-        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DEEPSLATE_IRON_ORE) || state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE) || state.isOf(Blocks.GOLD_ORE) || state.isOf(Blocks.DEEPSLATE_GOLD_ORE) || state.isOf(Blocks.REDSTONE_ORE) || state.isOf(Blocks.DEEPSLATE_REDSTONE_ORE);
+        return state.isIn(ModTags.Blocks.ORE_DETECTOR_DETECTABLE_BLOCKS);
     }
 }

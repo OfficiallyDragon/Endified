@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ENDINIUM_SCRAP_4);
                         entries.add(ModItems.ENDINIUM_UPGRADE_TEMPLATE);
                         entries.add(ModItems.RAW_SULFER);
+                        entries.add(ModItems.SULFER_DUST);
 
                         entries.add(ModBlocks.ENDINIUM_BLOCK);
                         entries.add(ModBlocks.ENDINIUM_DEBRIES);
@@ -49,6 +50,19 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_plants"))
                     .icon(() -> new ItemStack(ModItems.END_BERRIES)).entries((displayContext, entries) -> {
                         entries.add(ModItems.END_BERRIES);
+
+                    }).build());
+    public static final ItemGroup ENDIFIED_RESOURCE_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_resources"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_resources"))
+                    .icon(() -> new ItemStack(ModItems.ENDINIUM_SCRAP_2)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SULFER_DUST);
+                        entries.add(ModItems.ENDINIUM_CARBIDE);
+                        entries.add(ModItems.ENDINIUM_SCRAP_0);
+                        entries.add(ModItems.ENDINIUM_SCRAP_1);
+                        entries.add(ModItems.ENDINIUM_SCRAP_2);
+                        entries.add(ModItems.ENDINIUM_SCRAP_3);
+                        entries.add(ModItems.ENDINIUM_SCRAP_4);
+
 
                     }).build());
     public static void registerItemGroups() {
