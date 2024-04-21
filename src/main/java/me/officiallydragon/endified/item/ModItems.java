@@ -22,6 +22,7 @@ public class ModItems {
     public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings().maxDamage(100)));
     public static final Item END_BERRIES = registerItem("end_berries", new Item(new FabricItemSettings().food(ModFoodComponents.END_BERRIES)));
     public static final Item RAW_SULFER = registerItem("raw_sulfer", new Item(new FabricItemSettings()));
+    public static final Item SULFER_DUST = registerItem("sulfer_dust", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENDINIUM_SCRAP_0);

@@ -1,3 +1,6 @@
 {
-  "parent": "endified:block/sulfer_ore"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "endified:item/sulfer_dust"
+  }
 }
