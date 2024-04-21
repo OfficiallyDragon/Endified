@@ -20,8 +20,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Blocks.ORE_DETECTOR_DETECTABLE_BLOCKS)
-                .add(ModBlocks.ENDINIUM_DEBRIES)
-                .add(ModBlocks.SULFER_ORE)
+                .add(ModBlocks.ENDINIUM_DEBRIS)
+                .add(ModBlocks.SULFUR_ORE)
 
 
                 .forceAddTag(BlockTags.GOLD_ORES)
@@ -34,16 +34,34 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.COPPER_ORES);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.ENDINIUM_DEBRIES)
+                .add(ModBlocks.ENDINIUM_DEBRIS)
                 .add(ModBlocks.ENDINIUM_BLOCK)
-                .add(ModBlocks.SULFER_ORE);
+                .add(ModBlocks.SULFUR_ORE)
+                .add(ModBlocks.END_STONE_WALL)
+                .add(ModBlocks.END_STONE_SLAB)
+                .add(ModBlocks.END_STONE_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.END_STONE_WALL)
+                .add(ModBlocks.END_STONE_SLAB)
+                .add(ModBlocks.END_STONE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ENDINIUM_DEBRIES)
+                .add(ModBlocks.ENDINIUM_DEBRIS)
                 .add(ModBlocks.ENDINIUM_BLOCK)
-                .add(ModBlocks.SULFER_ORE);
+                .add(ModBlocks.SULFUR_ORE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
                 //Add netherite required block here
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.END_STONE_STAIRS);
+
+         getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(ModBlocks.END_STONE_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.END_STONE_WALL);
+
     }
 }

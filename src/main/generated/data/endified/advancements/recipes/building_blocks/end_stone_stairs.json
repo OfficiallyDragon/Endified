@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_endinium_debries": {
+    "has_end_stone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "endified:endinium_debries"
+              "minecraft:end_stone"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:endinium_scrap_0_from_blasting_endinium_debries"
+        "recipe": "minecraft:end_stone_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_endinium_debries",
+      "has_end_stone",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:endinium_scrap_0_from_blasting_endinium_debries"
+      "minecraft:end_stone_stairs"
     ]
   },
   "sends_telemetry_event": false

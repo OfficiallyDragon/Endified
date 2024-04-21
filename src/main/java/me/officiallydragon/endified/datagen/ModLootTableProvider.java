@@ -24,9 +24,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.ENDINIUM_BLOCK);
-        addDrop(ModBlocks.ENDINIUM_DEBRIES);
+        addDrop(ModBlocks.ENDINIUM_DEBRIS);
 
-        addDrop(ModBlocks.SULFER_ORE, copperLikeOreDrops(ModBlocks.SULFER_ORE, ModItems.RAW_SULFER));
+        addDrop(ModBlocks.SULFUR_ORE, copperLikeOreDrops(ModBlocks.SULFUR_ORE, ModItems.RAW_SULFUR));
+
+        addDrop(ModBlocks.END_STONE_STAIRS);
+        addDrop(ModBlocks.END_STONE_SLAB, slabDrops(ModBlocks.END_STONE_SLAB));
+        addDrop(ModBlocks.END_STONE_WALL);
     }
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop, ((LeafEntry.Builder)ItemEntry.builder(item)

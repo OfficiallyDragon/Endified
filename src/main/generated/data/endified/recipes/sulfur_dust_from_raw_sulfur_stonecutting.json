@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "endified:raw_sulfer"
+    "item": "endified:raw_sulfur"
   },
-  "result": "endified:sulfer_dust"
+  "result": "endified:sulfur_dust"
 }

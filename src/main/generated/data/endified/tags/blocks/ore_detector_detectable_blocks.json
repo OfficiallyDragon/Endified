@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "endified:endinium_debries",
-    "endified:sulfer_ore",
+    "endified:endinium_debris",
+    "endified:sulfur_ore",
     "#minecraft:gold_ores",
     "#minecraft:emerald_ores",
     "#minecraft:redstone_ores",

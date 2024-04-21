@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "endified:sulfer_ore"
+              "name": "endified:sulfur_ore"
             },
             {
               "type": "minecraft:item",
@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "endified:raw_sulfer"
+              "name": "endified:raw_sulfur"
             }
           ]
         }

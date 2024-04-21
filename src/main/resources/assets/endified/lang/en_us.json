@@ -8,13 +8,16 @@
   "item.endified.endinium_upgrade_template": "Endinium Smithing Upgrade",
   "item.endified.ore_detector": "Ore Detector",
   "item.endified.end_berries": "Endified Berries",
-  "item.endified.raw_sulfer": "Raw Sulfer",
-  "item.endified.sulfer_dust": "Sulfer Dust",
+  "item.endified.raw_sulfur": "Raw Sulfur",
+  "item.endified.sulfur_dust": "Sulfur Dust",
 
 
   "block.endified.endinium_block": "Block of Endinium",
-  "block.endified.endinium_debries": "Endinium Debries",
-  "block.endified.sulfer_ore": "Sulfer Ore",
+  "block.endified.endinium_debris": "Endinium Debris",
+  "block.endified.sulfur_ore": "Sulfur Ore",
+  "block.endified.end_stone_stairs": "End Stone Stairs",
+  "block.endified.end_stone_slab": "End Stone Slab",
+  "block.endified.end_stone_wall": "End Stone Wall",
 
   "itemgroup.endified": "Endified",
   "itemgroup.endified_tools": "Endified Tools",

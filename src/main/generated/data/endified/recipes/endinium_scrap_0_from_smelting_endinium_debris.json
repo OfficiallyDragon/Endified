@@ -5,7 +5,7 @@
   "experience": 0.7,
   "group": "endinium",
   "ingredient": {
-    "item": "endified:endinium_debries"
+    "item": "endified:endinium_debris"
   },
   "result": "endified:endinium_scrap_0"
 }

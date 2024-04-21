@@ -1,5 +1,9 @@
-// 1.20.1	2024-04-21T19:43:56.2264209	Endified/Tags for minecraft:block
-5a0a89d8b70bc257b6232a5d3d103504c6e86573 data\minecraft\tags\blocks\mineable\pickaxe.json
-2fcca148b9d9d40dc9be3c3ddc8a4cfc2d76f588 data\endified\tags\blocks\ore_detector_detectable_blocks.json
-5a0a89d8b70bc257b6232a5d3d103504c6e86573 data\minecraft\tags\blocks\needs_iron_tool.json
+// 1.20.1	2024-04-21T22:19:33.4772322	Endified/Tags for minecraft:block
+8dea06040f87947384cd6ecb267cbc4b9b656fbf data\minecraft\tags\blocks\mineable\pickaxe.json
+1ea804b23202d80096b3c365d390ec09737f1870 data\minecraft\tags\blocks\stairs.json
+57075bdfcd6c2d8a7811b92fc0f7bd3727c4a493 data\minecraft\tags\blocks\needs_stone_tool.json
+932c11678262d4d34733bfbd41761aab2f7c937f data\endified\tags\blocks\ore_detector_detectable_blocks.json
+3aac15d747a81ea19fa0b423378122c5a7853409 data\minecraft\tags\blocks\needs_iron_tool.json
+bad0be3bd9a1b37a54e228e4e76c01e8643f43d4 data\minecraft\tags\blocks\walls.json
+4fff5f12948d9eb9c8954356809d613479b6c269 data\minecraft\tags\blocks\slabs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json

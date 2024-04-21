@@ -1,4 +1,7 @@
-// 1.20.1	2024-04-21T19:43:56.2269197	Endified/Block Loot Tables
-dbf0f57a90c10d9b2b10141d979b2480408e7498 data\endified\loot_tables\blocks\sulfer_ore.json
-3d9882e1be0efbdade4aa4e7d524428f9f3184f3 data\endified\loot_tables\blocks\endinium_debries.json
+// 1.20.1	2024-04-21T22:19:33.4777294	Endified/Block Loot Tables
+1e35df60318d8c2dfe5fcab131d599b77beb8999 data\endified\loot_tables\blocks\endinium_debris.json
+3d3c2e631330c3bac52e895b3541a09b24b4bd20 data\endified\loot_tables\blocks\end_stone_slab.json
+834828fa7e0e841baba55eea23f4e4b007052668 data\endified\loot_tables\blocks\sulfur_ore.json
 e6922e7fd989954129e12e74ed1554dd767b89ef data\endified\loot_tables\blocks\endinium_block.json
+6fcb6f8b123d1a05fd593f6c6e0fe2c230224bec data\endified\loot_tables\blocks\end_stone_stairs.json
+1af51fd070eb3c29ef884c89f4a0bbfe1701d1fc data\endified\loot_tables\blocks\end_stone_wall.json

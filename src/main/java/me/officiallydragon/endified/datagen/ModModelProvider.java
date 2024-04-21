@@ -4,6 +4,8 @@ import me.officiallydragon.endified.block.ModBlocks;
 import me.officiallydragon.endified.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -15,9 +17,16 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SULFER_ORE);
+        BlockStateModelGenerator.BlockTexturePool endStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.END_STONE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_DEBRIES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_DEBRIS);
+
+        endStonePool.stairs(ModBlocks.END_STONE_STAIRS);
+        endStonePool.slab(ModBlocks.END_STONE_SLAB);
+        endStonePool.wall(ModBlocks.END_STONE_WALL);
+
     }
 
     @Override
@@ -28,8 +37,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENDINIUM_SCRAP_1, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDINIUM_SCRAP_0, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORE_DETECTOR, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_SULFER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SULFER_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_SULFUR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SULFUR_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDINIUM_CARBIDE, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_BERRIES, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDINIUM_UPGRADE_TEMPLATE, Models.GENERATED);

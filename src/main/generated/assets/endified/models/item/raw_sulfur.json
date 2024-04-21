@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "endified:item/sulfer_dust"
+    "layer0": "endified:item/raw_sulfur"
   }
 }

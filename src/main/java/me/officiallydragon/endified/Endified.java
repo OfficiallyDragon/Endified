@@ -19,6 +19,6 @@ public class Endified implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-		FuelRegistry.INSTANCE.add(ModItems.SULFER_DUST, 25000);
+		FuelRegistry.INSTANCE.add(ModItems.SULFUR_DUST, 25000);
 	}
 }

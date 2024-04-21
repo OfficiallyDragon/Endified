@@ -1,9 +1,6 @@
 {
   "replace": false,
   "values": [
-    "endified:endinium_debris",
-    "endified:endinium_block",
-    "endified:sulfur_ore",
     "endified:end_stone_wall",
     "endified:end_stone_slab",
     "endified:end_stone_stairs"

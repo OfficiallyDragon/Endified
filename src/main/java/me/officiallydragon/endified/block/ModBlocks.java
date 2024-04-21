@@ -3,8 +3,7 @@ package me.officiallydragon.endified.block;
 import me.officiallydragon.endified.Endified;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -16,10 +15,19 @@ public class ModBlocks {
 
     public static final Block ENDINIUM_BLOCK = registerBlock("endinium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-    public static final Block ENDINIUM_DEBRIES = registerBlock("endinium_debries",
+    public static final Block ENDINIUM_DEBRIS = registerBlock("endinium_debris",
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(25.0f,1200.0f)));
-    public static final Block SULFER_ORE = registerBlock("sulfer_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE).sounds(BlockSoundGroup.TUFF).strength(15.0f,200.0f)));
+    public static final Block SULFUR_ORE = registerBlock("sulfur_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).sounds(BlockSoundGroup.TUFF).strength(3.0f,9.0f)));
+    public static final Block END_STONE_STAIRS = registerBlock("end_stone_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings
+                    .copyOf(Blocks.END_STONE).sounds(BlockSoundGroup.TUFF).strength(3.0f,9.0f)));
+    public static final Block END_STONE_SLAB = registerBlock("end_stone_slab",
+            new SlabBlock(FabricBlockSettings
+                    .copyOf(Blocks.END_STONE).sounds(BlockSoundGroup.TUFF).strength(3.0f,9.0f)));
+    public static final Block END_STONE_WALL = registerBlock("end_stone_wall",
+            new WallBlock(FabricBlockSettings
+                    .copyOf(Blocks.END_STONE).sounds(BlockSoundGroup.TUFF).strength(3.0f,9.0f)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Endified.MOD_ID, name), block);
