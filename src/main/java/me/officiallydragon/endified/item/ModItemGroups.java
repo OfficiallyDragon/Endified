@@ -36,6 +36,21 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_tools"))
                     .icon(() -> new ItemStack(ModItems.ORE_DETECTOR)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ORE_DETECTOR);
+                        entries.add(ModItems.ENDINIUM_PICKAXE);
+                        entries.add(ModItems.ENDINIUM_AXE);
+                        entries.add(ModItems.ENDINIUM_HOE);
+                        entries.add(ModItems.ENDINIUM_SHOVEL);
+
+                    }).build());
+    public static final ItemGroup ENDIFIED_COMBAT_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_combat"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_combat"))
+                    .icon(() -> new ItemStack(ModItems.ENDINIUM_SWORD)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.ENDINIUM_SWORD);
+                        entries.add(ModItems.ENDINIUM_AXE);
+                        entries.add(ModItems.ENDINIUM_HELMET);
+                        entries.add(ModItems.ENDINIUM_CHESTPLATE);
+                        entries.add(ModItems.ENDINIUM_LEGGINGS);
+                        entries.add(ModItems.ENDINIUM_BOOTS);
 
                     }).build());
     public static final ItemGroup ENDIFIED_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_blocks"),

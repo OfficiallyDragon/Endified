@@ -6,19 +6,19 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    ENDINIUM(5,3120,10.0f,7.0f,30, () -> Ingredient.ofItems(ModItems.ENDINIUM_SCRAP_4));
+    ENDINIUM(5,3120,15.0f,5.0f,30, () -> Ingredient.ofItems(ModItems.ENDINIUM_SCRAP_4));
 
-    private final int minigLevel;
+    private final int miningLevel;
     private final int ItemDurability;
-    private final float minigSpeed;
+    private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterial(int minigLevel, int itemDurability, float minigSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
-        this.minigLevel = minigLevel;
+    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+        this.miningLevel = miningLevel;
         ItemDurability = itemDurability;
-        this.minigSpeed = minigSpeed;
+        this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
         this.repairIngredient = repairIngredient;
@@ -31,7 +31,7 @@ public enum ModToolMaterial implements ToolMaterial {
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return this.minigSpeed;
+        return this.miningSpeed;
     }
 
     @Override
@@ -41,7 +41,7 @@ public enum ModToolMaterial implements ToolMaterial {
 
     @Override
     public int getMiningLevel() {
-        return this.minigLevel;
+        return this.miningLevel;
     }
 
     @Override

@@ -5,12 +5,24 @@
   "item.endified.endinium_scrap_3": "Endinium Scrap",
   "item.endified.endinium_scrap_4": "Endinium Scrap",
   "item.endified.endinium_carbide": "Endinium Carbide",
+
   "item.endified.endinium_upgrade_template": "Endinium Smithing Upgrade",
+
   "item.endified.ore_detector": "Ore Detector",
   "item.endified.end_berries": "Endified Berries",
   "item.endified.raw_sulfur": "Raw Sulfur",
   "item.endified.sulfur_dust": "Sulfur Dust",
 
+  "item.endified.endinium_axe": "Endinium Axe",
+  "item.endified.endinium_sword": "Endinium Sword",
+  "item.endified.endinium_hoe": "Endinium Hoe",
+  "item.endified.endinium_shovel": "Endinium Shovel",
+  "item.endified.endinium_pickaxe": "Endinium Pickaxe",
+
+  "item.endified.endinium_helmet": "Endinium Helmet",
+  "item.endified.endinium_chestplate": "Endinium Chestplate",
+  "item.endified.endinium_leggings": "Endinium Leggings",
+  "item.endified.endinium_boots": "Endinium Boots",
 
   "block.endified.endinium_block": "Block of Endinium",
   "block.endified.endinium_debris": "Endinium Debris",
@@ -23,5 +35,6 @@
   "itemgroup.endified_tools": "Endified Tools",
   "itemgroup.endified_plants": "Endified Organics",
   "itemgroup.endified_blocks": "Endified Blocks",
-  "itemgroup.endified_resources": "Endified Resources"
+  "itemgroup.endified_resources": "Endified Resources",
+  "itemgroup.endified_combat": "Endified Combat"
 }

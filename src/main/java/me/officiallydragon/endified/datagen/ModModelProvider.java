@@ -9,6 +9,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -42,5 +43,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENDINIUM_CARBIDE, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_BERRIES, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDINIUM_UPGRADE_TEMPLATE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ENDINIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDINIUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDINIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDINIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDINIUM_SWORD, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDINIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDINIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDINIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDINIUM_BOOTS));
     }
 }

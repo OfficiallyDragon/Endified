@@ -54,6 +54,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
                 //Add netherite required block here
 
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")));
+                //Add endinium required block here
+
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.END_STONE_STAIRS);
 
