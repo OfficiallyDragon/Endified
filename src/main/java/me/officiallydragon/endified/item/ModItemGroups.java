@@ -11,35 +11,14 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup ENDIFIED_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified"))
-                    .icon(() -> new ItemStack(ModItems.ENDINIUM_CARBIDE)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.ENDINIUM_CARBIDE);
-                        entries.add(ModItems.ENDINIUM_SCRAP_0);
-                        entries.add(ModItems.ENDINIUM_SCRAP_1);
-                        entries.add(ModItems.ENDINIUM_SCRAP_2);
-                        entries.add(ModItems.ENDINIUM_SCRAP_3);
-                        entries.add(ModItems.ENDINIUM_SCRAP_4);
-                        entries.add(ModItems.ENDINIUM_UPGRADE_TEMPLATE);
-                        entries.add(ModItems.RAW_SULFUR);
-                        entries.add(ModItems.SULFUR_DUST);
-
-                        entries.add(ModBlocks.ENDINIUM_BLOCK);
-                        entries.add(ModBlocks.ENDINIUM_DEBRIS);
-
-                        entries.add(ModItems.ORE_DETECTOR);
-
-                        entries.add(ModItems.END_BERRIES);
-
-                    }).build());
     public static final ItemGroup ENDIFIED_TOOL_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_tools"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_tools"))
-                    .icon(() -> new ItemStack(ModItems.ORE_DETECTOR)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.ORE_DETECTOR);
+                    .icon(() -> new ItemStack(ModItems.ENDINIUM_PICKAXE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ENDINIUM_PICKAXE);
                         entries.add(ModItems.ENDINIUM_AXE);
-                        entries.add(ModItems.ENDINIUM_HOE);
                         entries.add(ModItems.ENDINIUM_SHOVEL);
+                        entries.add(ModItems.ENDINIUM_HOE);
+                        entries.add(ModItems.ORE_DETECTOR);
 
                     }).build());
     public static final ItemGroup ENDIFIED_COMBAT_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_combat"),
@@ -56,12 +35,12 @@ public class ModItemGroups {
     public static final ItemGroup ENDIFIED_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_blocks"))
                     .icon(() -> new ItemStack(ModBlocks.ENDINIUM_DEBRIS)).entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.ENDINIUM_DEBRIS);
-                        entries.add(ModBlocks.ENDINIUM_BLOCK);
-                        entries.add(ModBlocks.SULFUR_ORE);
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_SLAB);
                         entries.add(ModBlocks.END_STONE_WALL);
+                        entries.add(ModBlocks.SULFUR_ORE);
+                        entries.add(ModBlocks.ENDINIUM_DEBRIS);
+                        entries.add(ModBlocks.ENDINIUM_BLOCK);
 
                     }).build());
     public static final ItemGroup ENDIFIED_PLANT_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_plants"),
@@ -72,7 +51,7 @@ public class ModItemGroups {
                     }).build());
     public static final ItemGroup ENDIFIED_RESOURCE_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_resources"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_resources"))
-                    .icon(() -> new ItemStack(ModItems.ENDINIUM_SCRAP_2)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.SULFUR_DUST)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SULFUR_DUST);
                         entries.add(ModItems.RAW_SULFUR);
                         entries.add(ModItems.ENDINIUM_CARBIDE);
