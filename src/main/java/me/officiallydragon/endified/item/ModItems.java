@@ -1,6 +1,7 @@
 package me.officiallydragon.endified.item;
 
 import me.officiallydragon.endified.Endified;
+import me.officiallydragon.endified.item.custom.ModArmorItem;
 import me.officiallydragon.endified.item.custom.OreDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -35,13 +36,13 @@ public class ModItems {
             new HoeItem(ModToolMaterial.ENDINIUM, 1, 4f, new  FabricItemSettings()));
 
     public static final Item ENDINIUM_HELMET = registerItem("endinium_helmet",
-            new ArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.HELMET, new  FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.HELMET, new  FabricItemSettings()));
     public static final Item ENDINIUM_CHESTPLATE = registerItem("endinium_chestplate",
-            new ArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.CHESTPLATE, new  FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.CHESTPLATE, new  FabricItemSettings()));
     public static final Item ENDINIUM_LEGGINGS = registerItem("endinium_leggings",
-            new ArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.LEGGINGS, new  FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.LEGGINGS, new  FabricItemSettings()));
     public static final Item ENDINIUM_BOOTS = registerItem("endinium_boots",
-            new ArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.BOOTS, new  FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.BOOTS, new  FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(ENDINIUM_SCRAP_0);

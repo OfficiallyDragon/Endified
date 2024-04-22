@@ -2,11 +2,13 @@ package me.officiallydragon.endified.datagen;
 
 import me.officiallydragon.endified.block.ModBlocks;
 import me.officiallydragon.endified.item.ModItems;
+import me.officiallydragon.endified.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
@@ -38,6 +40,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModItems.SULFUR_DUST, ModItems.RAW_SULFUR, 1);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ORE_DETECTOR)
+                .input(Character.valueOf('I'), Items.IRON_INGOT)
+                .input(Character.valueOf('C'), ModItems.ENDINIUM_CARBIDE)
+                .pattern("  I")
+                .pattern(" I ")
+                .pattern("CC ")
+                .criterion("has_endinium_carbide", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_CARBIDE))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ORE_DETECTOR) + "_crafting");
 
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
@@ -64,6 +74,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 Ingredient.ofItems(Items.NETHERITE_SHOVEL), Ingredient.ofItems(ModItems.ENDINIUM_CARBIDE),
                 RecipeCategory.COMBAT, ModItems.ENDINIUM_SHOVEL).criterion("has_endinium_carbide", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_CARBIDE))
                 .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_SHOVEL) + "_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(Items.NETHERITE_HELMET), Ingredient.ofItems(ModItems.ENDINIUM_CARBIDE),
+                RecipeCategory.COMBAT, ModItems.ENDINIUM_HELMET).criterion("has_endinium_carbide", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_CARBIDE))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_HELMET) + "_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(Items.NETHERITE_CHESTPLATE), Ingredient.ofItems(ModItems.ENDINIUM_CARBIDE),
+                RecipeCategory.COMBAT, ModItems.ENDINIUM_CHESTPLATE).criterion("has_endinium_carbide", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_CARBIDE))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_CHESTPLATE) + "_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(Items.NETHERITE_LEGGINGS), Ingredient.ofItems(ModItems.ENDINIUM_CARBIDE),
+                RecipeCategory.COMBAT, ModItems.ENDINIUM_LEGGINGS).criterion("has_endinium_carbide", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_CARBIDE))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_LEGGINGS) + "_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(Items.NETHERITE_BOOTS), Ingredient.ofItems(ModItems.ENDINIUM_CARBIDE),
+                RecipeCategory.COMBAT, ModItems.ENDINIUM_BOOTS).criterion("has_endinium_carbide", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_CARBIDE))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_BOOTS) + "_smithing");
 
     }
 

@@ -3,6 +3,7 @@ package me.officiallydragon.endified;
 import me.officiallydragon.endified.block.ModBlocks;
 import me.officiallydragon.endified.item.ModItemGroups;
 import me.officiallydragon.endified.item.ModItems;
+import me.officiallydragon.endified.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -18,6 +19,8 @@ public class Endified implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModLootTableModifiers.modifyLootTables();
 
 		FuelRegistry.INSTANCE.add(ModItems.SULFUR_DUST, 25000);
 	}

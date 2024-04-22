@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "endified:endinium_carbide"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "result": {
+    "item": "endified:endinium_boots"
+  },
+  "template": {
+    "item": "endified:endinium_upgrade_template"
+  }
+}

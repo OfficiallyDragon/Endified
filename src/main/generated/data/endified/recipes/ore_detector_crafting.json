@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "endified:endinium_carbide"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "  I",
+    " I ",
+    "CC "
+  ],
+  "result": {
+    "item": "endified:ore_detector"
+  },
+  "show_notification": true
+}
