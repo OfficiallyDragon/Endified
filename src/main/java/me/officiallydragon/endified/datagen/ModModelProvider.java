@@ -24,6 +24,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_DEBRIS);
 
+        blockStateModelGenerator.registerPlantPart(ModBlocks.ENDIFIED_BERRY_VINES, ModBlocks.ENDIFIED_BERRY_VINES, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         endStonePool.stairs(ModBlocks.END_STONE_STAIRS);
         endStonePool.slab(ModBlocks.END_STONE_SLAB);
         endStonePool.wall(ModBlocks.END_STONE_WALL);

@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-22T17:21:07.8536574	Endified/Model Definitions
+// 1.20.1	2024-04-23T12:23:11.5685702	Endified/Model Definitions
 c5852e5f4742cc7e6835d9c4c3f0ef35c7c7bd40 assets\endified\models\item\endinium_boots_iron_trim.json
 29e22f841cc8ba185e51f9d917a85d0191962811 assets\endified\models\item\raw_sulfur.json
 28ddb0c9058a7810c2ecfc967c7dfea61f930373 assets\endified\models\item\endinium_helmet_amethyst_trim.json
@@ -33,8 +33,8 @@ b72fdaa01684150f9254f37b58b41dea09c8ea00 assets\endified\models\block\end_stone_
 f34a9ebb277c2f583aa84882b65c3a1de20f9897 assets\endified\blockstates\end_stone_wall.json
 61053eaa646cc5f52dfd710655bca20ff0da975a assets\endified\models\item\endinium_leggings_amethyst_trim.json
 687d109fa7b3c6130d622705c1feb25cbf85f511 assets\endified\models\item\endinium_scrap_4.json
-8f99340ff2a3f0c4aa879315020f999e36df70df assets\endified\models\item\endinium_helmet_gold_trim.json
 197c981a328805150b264efc23bf5bb3c95c8a6a assets\endified\models\item\endinium_chestplate_diamond_trim.json
+8f99340ff2a3f0c4aa879315020f999e36df70df assets\endified\models\item\endinium_helmet_gold_trim.json
 a6ea754db334bfce968743b6a9894909df52f0db assets\endified\models\item\endinium_boots_emerald_trim.json
 7375cb9c1b254e5252ad63740d1eb3ebf3b2b7b8 assets\endified\models\item\endinium_leggings_quartz_trim.json
 917701c7a895004f2afbf397d20e3d4c9fe53a27 assets\endified\models\item\endinium_chestplate_redstone_trim.json
@@ -61,8 +61,8 @@ f674e987ed7b80ff918b188992e0845911a67f72 assets\endified\models\item\sulfur_ore.
 7dcb7758dd77f3348f0296975bc2e37cabb3a52e assets\endified\models\item\endinium_boots_quartz_trim.json
 52ba951bf628a9b72d96168ecc08a9c03c6f07a8 assets\endified\models\item\endinium_helmet.json
 f9e93674e39563b48f423de20fc48b00f3fc6f55 assets\endified\models\item\endinium_helmet_lapis_trim.json
-646bf046325658c2b4fe75815b36eb3b10f7c2e8 assets\endified\models\item\endinium_debris.json
 07e64075a2df81617731dc092e84f5be8ff34a90 assets\endified\models\item\endinium_carbide.json
+646bf046325658c2b4fe75815b36eb3b10f7c2e8 assets\endified\models\item\endinium_debris.json
 4c428c4767a136b330d030d7e88cdfe3565887dc assets\endified\models\item\sulfur_dust.json
 e15905959ec2e80c797ac2fdb2c94cff013c4caf assets\endified\models\item\endinium_boots_gold_trim.json
 4f26efaeb97c11b8a1a1c4e1326bd9e66d779945 assets\endified\models\item\endinium_helmet_netherite_trim.json
@@ -82,6 +82,6 @@ d43d3803a8b09982a4e62dee45ca0fe6b9991483 assets\endified\models\item\endinium_ho
 21aa4d82e295c8f51d37e85ec71bc16076740540 assets\endified\models\item\endinium_helmet_iron_trim.json
 ca744eb5c4dee29e916f2ff32d15a0603857ccd2 assets\endified\blockstates\endinium_block.json
 fb9c9aa187270eb398615043ddd97ecd63910729 assets\endified\models\item\end_berries.json
-bb17d090038352b1e6a4d2e9e57657401f1343ed assets\endified\models\item\endinium_chestplate.json
 78a358cd638b710f369711931003143e69712ee2 assets\endified\models\item\endinium_leggings_copper_trim.json
+bb17d090038352b1e6a4d2e9e57657401f1343ed assets\endified\models\item\endinium_chestplate.json
 5a6a98b05565f30c783289ade68ca0bff68279c8 assets\endified\models\item\endinium_helmet_emerald_trim.json

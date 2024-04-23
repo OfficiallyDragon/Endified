@@ -54,6 +54,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.SULFUR_DUST)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SULFUR_DUST);
                         entries.add(ModItems.RAW_SULFUR);
+                        entries.add(ModItems.ENDINIUM_UPGRADE_TEMPLATE);
                         entries.add(ModItems.ENDINIUM_CARBIDE);
                         entries.add(ModItems.ENDINIUM_SCRAP_0);
                         entries.add(ModItems.ENDINIUM_SCRAP_1);

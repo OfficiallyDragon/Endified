@@ -1,15 +1,21 @@
 package me.officiallydragon.endified.block;
 
+import com.google.common.collect.ImmutableMap;
 import me.officiallydragon.endified.Endified;
+import me.officiallydragon.endified.block.custom.EndifiedBerryCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class ModBlocks {
 
@@ -28,6 +34,10 @@ public class ModBlocks {
     public static final Block END_STONE_WALL = registerBlock("end_stone_wall",
             new WallBlock(FabricBlockSettings
                     .copyOf(Blocks.END_STONE).sounds(BlockSoundGroup.TUFF).strength(3.0f,9.0f)));
+    public static final Block ENDIFIED_BERRY_VINES = registerBlock("endified_berry_vines",
+            new VineBlock(FabricBlockSettings
+                    .copyOf(Blocks.CAVE_VINES).sounds(BlockSoundGroup.CAVE_VINES)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Endified.MOD_ID, name), block);
