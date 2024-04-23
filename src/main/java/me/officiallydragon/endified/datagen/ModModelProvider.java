@@ -11,6 +11,8 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 
+import javax.swing.*;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -24,7 +26,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_DEBRIS);
 
-        blockStateModelGenerator.registerPlantPart(ModBlocks.ENDIFIED_BERRY_VINES, ModBlocks.ENDIFIED_BERRY_VINES, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ENDIFIED_BERRY_VINES, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ENDIFIED_BERRY_VINES_LIT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ENDIFIED_BERRY_VINES_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ENDIFIED_BERRY_VINES_PLANT_LIT, BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
         endStonePool.stairs(ModBlocks.END_STONE_STAIRS);
         endStonePool.slab(ModBlocks.END_STONE_SLAB);
