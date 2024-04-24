@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_endinium_scrap_4": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endified:endinium_scrap_4"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:endinium_carbide_crafting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_endinium_scrap_4",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:endinium_carbide_crafting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

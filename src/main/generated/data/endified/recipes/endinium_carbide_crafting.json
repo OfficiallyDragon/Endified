@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "endified:endinium_scrap_4"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "NE ",
+    "NEE",
+    "NNE"
+  ],
+  "result": {
+    "item": "endified:endinium_carbide"
+  },
+  "show_notification": true
+}
