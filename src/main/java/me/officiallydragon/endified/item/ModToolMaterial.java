@@ -1,12 +1,15 @@
 package me.officiallydragon.endified.item;
 
+import net.fabricmc.yarn.constants.MiningLevels;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    ENDINIUM(5,3120,15.0f,5.0f,30, () -> Ingredient.ofItems(ModItems.ENDINIUM_SCRAP_4));
+    ENDINIUM(5,3120,10.0f,5.0f,16, () -> Ingredient.ofItems(ModItems.ENDINIUM_CARBIDE));
+
 
     private final int miningLevel;
     private final int ItemDurability;

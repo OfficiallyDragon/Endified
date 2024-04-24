@@ -49,6 +49,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_endinium_carbide", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_CARBIDE))
                 .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ORE_DETECTOR) + "_crafting");
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ENDINIUM_CARBIDE)
+                .input(Character.valueOf('N'), Items.NETHERITE_SCRAP)
+                .input(Character.valueOf('E'), ModItems.ENDINIUM_SCRAP_4)
+                .pattern("NE ")
+                .pattern("NEE")
+                .pattern("NNE")
+                .criterion("has_endinium_scrap_4", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_SCRAP_4))
+                .offerTo(exporter,RecipeProvider.getItemPath(ModItems.ENDINIUM_CARBIDE) + "_crafting");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(ModItems.ENDINIUM_SCRAP_0), Ingredient.ofItems(Items.EMERALD),
+                RecipeCategory.MISC, ModItems.ENDINIUM_SCRAP_1).criterion("has_endinium_upgrade_template", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_UPGRADE_TEMPLATE))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_SCRAP_1) + "_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(ModItems.ENDINIUM_SCRAP_1), Ingredient.ofItems(Items.DIAMOND),
+                RecipeCategory.MISC, ModItems.ENDINIUM_SCRAP_2).criterion("has_endinium_scrap_1", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_SCRAP_1))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_SCRAP_2) + "_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(ModItems.ENDINIUM_SCRAP_2), Ingredient.ofItems(Items.REDSTONE),
+                RecipeCategory.MISC, ModItems.ENDINIUM_SCRAP_3).criterion("has_endinium_scrap_2", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_SCRAP_2))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_SCRAP_3) + "_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(ModItems.ENDINIUM_SCRAP_3), Ingredient.ofItems(Items.GOLD_INGOT),
+                RecipeCategory.MISC, ModItems.ENDINIUM_SCRAP_4).criterion("has_endinium_scrap_3", RecipeProvider.conditionsFromItem(ModItems.ENDINIUM_SCRAP_3))
+                .offerTo(exporter, RecipeProvider.getItemPath(ModItems.ENDINIUM_SCRAP_4) + "_smithing");
+
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ENDINIUM_UPGRADE_TEMPLATE),
                 Ingredient.ofItems(Items.NETHERITE_SWORD), Ingredient.ofItems(ModItems.ENDINIUM_CARBIDE),

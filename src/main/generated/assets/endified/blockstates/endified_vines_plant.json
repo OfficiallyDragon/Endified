@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "endified:block/endified_vines_plant"
+    },
+    "berries=true": {
+      "model": "endified:block/endified_vines_plant_lit"
+    }
+  }
+}

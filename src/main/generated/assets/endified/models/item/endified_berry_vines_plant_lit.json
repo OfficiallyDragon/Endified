@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "endified:block/endified_berry_vines_plant_lit"
-  }
-}

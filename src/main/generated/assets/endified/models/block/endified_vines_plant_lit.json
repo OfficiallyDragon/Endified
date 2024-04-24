@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "endified:block/endified_berry_vines_plant"
+    "cross": "endified:block/endified_vines_plant_lit"
   }
 }

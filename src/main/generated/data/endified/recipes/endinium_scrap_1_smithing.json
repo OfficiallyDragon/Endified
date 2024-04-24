@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:emerald"
+  },
+  "base": {
+    "item": "endified:endinium_scrap_0"
+  },
+  "result": {
+    "item": "endified:endinium_scrap_1"
+  },
+  "template": {
+    "item": "endified:endinium_upgrade_template"
+  }
+}

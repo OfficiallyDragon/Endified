@@ -1,11 +1,13 @@
 package me.officiallydragon.endified.item;
 
 import me.officiallydragon.endified.Endified;
+import me.officiallydragon.endified.block.ModBlocks;
 import me.officiallydragon.endified.item.custom.ModArmorItem;
 import me.officiallydragon.endified.item.custom.OreDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,20 +22,20 @@ public class ModItems {
     public static final Item ENDINIUM_SCRAP_4 = registerItem("endinium_scrap_4", new Item(new FabricItemSettings()));
     public static final Item ENDINIUM_CARBIDE = registerItem("endinium_carbide", new Item(new FabricItemSettings()));
     public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings().maxDamage(100)));
-    public static final Item END_BERRIES = registerItem("end_berries", new Item(new FabricItemSettings().food(ModFoodComponents.END_BERRIES)));
+    public static final Item END_BERRIES = registerItem("end_berries", (Item)new AliasedBlockItem(ModBlocks.ENDIFIED_VINES, new FabricItemSettings().food(ModFoodComponents.END_BERRIES)));
     public static final Item RAW_SULFUR = registerItem("raw_sulfur", new Item(new FabricItemSettings()));
     public static final Item SULFUR_DUST = registerItem("sulfur_dust", new Item(new FabricItemSettings()));
 
     public static final Item ENDINIUM_PICKAXE = registerItem("endinium_pickaxe",
-            new PickaxeItem(ModToolMaterial.ENDINIUM, 7, -2.8f, new  FabricItemSettings()));
+            new PickaxeItem(ModToolMaterial.ENDINIUM, 1, -2.8f, new  FabricItemSettings()));
     public static final Item ENDINIUM_AXE = registerItem("endinium_axe",
-            new AxeItem(ModToolMaterial.ENDINIUM, 12, 0.9f, new  FabricItemSettings()));
+            new AxeItem(ModToolMaterial.ENDINIUM, 6.0f, -3.0f, new  FabricItemSettings()));
     public static final Item ENDINIUM_SHOVEL = registerItem("endinium_shovel",
-            new ShovelItem(ModToolMaterial.ENDINIUM, 7.5f, 1f, new  FabricItemSettings()));
+            new ShovelItem(ModToolMaterial.ENDINIUM, 1.5f, -3.0f, new  FabricItemSettings()));
     public static final Item ENDINIUM_SWORD = registerItem("endinium_sword",
-            new SwordItem(ModToolMaterial.ENDINIUM, 9, 1.6f, new  FabricItemSettings()));
+            new SwordItem(ModToolMaterial.ENDINIUM, 3, -2.4f, new  FabricItemSettings()));
     public static final Item ENDINIUM_HOE = registerItem("endinium_hoe",
-            new HoeItem(ModToolMaterial.ENDINIUM, 1, 4f, new  FabricItemSettings()));
+            new HoeItem(ModToolMaterial.ENDINIUM, -4, 0f, new  FabricItemSettings()));
 
     public static final Item ENDINIUM_HELMET = registerItem("endinium_helmet",
             new ModArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.HELMET, new  FabricItemSettings()));
@@ -45,13 +47,7 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.BOOTS, new  FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(ENDINIUM_SCRAP_0);
-        entries.add(ENDINIUM_SCRAP_1);
-        entries.add(ENDINIUM_SCRAP_2);
-        entries.add(ENDINIUM_SCRAP_3);
-        entries.add(ENDINIUM_SCRAP_4);
-        entries.add(ENDINIUM_UPGRADE_TEMPLATE);
-        entries.add(ENDINIUM_CARBIDE);
+
     }
 
 
