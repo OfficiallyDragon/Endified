@@ -4,6 +4,7 @@ import me.officiallydragon.endified.block.ModBlocks;
 import me.officiallydragon.endified.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
@@ -23,15 +24,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SULFUR_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDINIUM_DEBRIS);
-        
-            Identifier identifier = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES, "", Models.CROSS, TextureMap::cross);
-            Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES, "_lit", Models.CROSS, TextureMap::cross);
-            blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.ENDIFIED_VINES)
-                    .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.BERRIES, identifier2, identifier)));
-            Identifier identifier3 = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES_PLANT, "", Models.CROSS, TextureMap::cross);
-            Identifier identifier4 = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES_PLANT, "_lit", Models.CROSS, TextureMap::cross);
-            blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.ENDIFIED_VINES_PLANT)
-                    .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.BERRIES, identifier4, identifier3)));
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ENDIFIED_DAHLIA, ModBlocks.POTTED_ENDIFIED_DAHLIA, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        Identifier identifier = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES, "", Models.CROSS, TextureMap::cross);
+        Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES, "_lit", Models.CROSS, TextureMap::cross);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.ENDIFIED_VINES)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.BERRIES, identifier2, identifier)));
+        Identifier identifier3 = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES_PLANT, "", Models.CROSS, TextureMap::cross);
+        Identifier identifier4 = blockStateModelGenerator.createSubModel(ModBlocks.ENDIFIED_VINES_PLANT, "_lit", Models.CROSS, TextureMap::cross);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.ENDIFIED_VINES_PLANT)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.BERRIES, identifier4, identifier3)));
         
         endStonePool.stairs(ModBlocks.END_STONE_STAIRS);
         endStonePool.slab(ModBlocks.END_STONE_SLAB);

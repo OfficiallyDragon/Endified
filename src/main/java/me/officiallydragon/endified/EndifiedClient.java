@@ -10,5 +10,8 @@ public class EndifiedClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ENDIFIED_VINES,  RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ENDIFIED_VINES_PLANT,  RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ENDIFIED_DAHLIA,  RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_ENDIFIED_DAHLIA,  RenderLayer.getCutout());
     }
 }

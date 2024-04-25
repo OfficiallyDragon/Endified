@@ -31,6 +31,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.END_STONE_STAIRS);
         addDrop(ModBlocks.END_STONE_SLAB, slabDrops(ModBlocks.END_STONE_SLAB));
         addDrop(ModBlocks.END_STONE_WALL);
+
+        addDrop(ModBlocks.ENDIFIED_DAHLIA);
+        addPottedPlantDrops(ModBlocks.POTTED_ENDIFIED_DAHLIA);
     }
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop, ((LeafEntry.Builder)ItemEntry.builder(item)

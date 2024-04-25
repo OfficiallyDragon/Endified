@@ -47,6 +47,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endified_plants"))
                     .icon(() -> new ItemStack(ModItems.END_BERRIES)).entries((displayContext, entries) -> {
                         entries.add(ModItems.END_BERRIES);
+                        entries.add(ModBlocks.ENDIFIED_DAHLIA);
 
                     }).build());
     public static final ItemGroup ENDIFIED_RESOURCE_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Endified.MOD_ID, "endified_resources"),

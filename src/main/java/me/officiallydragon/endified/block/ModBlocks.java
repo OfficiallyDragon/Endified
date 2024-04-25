@@ -1,12 +1,14 @@
 package me.officiallydragon.endified.block;
 
 import me.officiallydragon.endified.Endified;
+import me.officiallydragon.endified.block.custom.EndifiedDahliaBlock;
 import me.officiallydragon.endified.block.custom.EndifiedVinesBodyBlock;
 import me.officiallydragon.endified.block.custom.EndifiedVinesHeadBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -38,6 +40,11 @@ public class ModBlocks {
             .mapColor(MapColor.DARK_GREEN).noCollision().luminance(CaveVines.getLuminanceSupplier(14)).breakInstantly()
             .sounds(BlockSoundGroup.CAVE_VINES).pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block ENDIFIED_DAHLIA = registerBlock("endified_dahlia",
+            new EndifiedDahliaBlock(StatusEffects.DARKNESS, 2, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()
+                    .sounds(BlockSoundGroup.FLOWERING_AZALEA).strength(3.0f,9.0f)));
+    public static final Block POTTED_ENDIFIED_DAHLIA = Registry.register(Registries.BLOCK, new Identifier(Endified.MOD_ID, "potted_endified_dahlia"),
+            new FlowerPotBlock(ENDIFIED_DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque().breakInstantly()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
