@@ -1,11 +1,16 @@
 package me.officiallydragon.endified.block.custom;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.entity.effect.StatusEffect;
+import me.officiallydragon.endified.util.ModTags;
+import net.minecraft.block.*;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
 
-public class EndifiedDahliaBlock extends FlowerBlock {
+public class EndifiedDahliaBlock extends PlantBlock {
 
-    public EndifiedDahliaBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
-        super(suspiciousStewEffect, effectDuration, settings);
+
+    public EndifiedDahliaBlock(Settings settings) {
+        super(settings);
+    }
+    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        return floor.isIn(ModTags.Blocks.DAHLIA_PLACEABLE) || floor.isOf(Blocks.DIRT);
     }
 }
-

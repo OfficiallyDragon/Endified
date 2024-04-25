@@ -4,6 +4,7 @@ import me.officiallydragon.endified.block.ModBlocks;
 import me.officiallydragon.endified.datagen.ModModelProvider;
 import me.officiallydragon.endified.item.ModItemGroups;
 import me.officiallydragon.endified.item.ModItems;
+import me.officiallydragon.endified.util.ModCustomTrades;
 import me.officiallydragon.endified.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,6 +22,7 @@ public class Endified implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModLootTableModifiers.modifyLootTables();
+		ModCustomTrades.registerCustomTrades();
 
 		FuelRegistry.INSTANCE.add(ModItems.SULFUR_DUST, 25000);
 	}

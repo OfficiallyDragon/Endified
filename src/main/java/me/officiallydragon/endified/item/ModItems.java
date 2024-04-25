@@ -22,7 +22,8 @@ public class ModItems {
     public static final Item ENDINIUM_SCRAP_4 = registerItem("endinium_scrap_4", new Item(new FabricItemSettings()));
     public static final Item ENDINIUM_CARBIDE = registerItem("endinium_carbide", new Item(new FabricItemSettings()));
     public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings().maxDamage(100)));
-    public static final Item END_BERRIES = registerItem("end_berries", (Item)new AliasedBlockItem(ModBlocks.ENDIFIED_VINES, new FabricItemSettings().food(ModFoodComponents.END_BERRIES)));
+    public static final Item END_BERRIES = registerItem("end_berries", (Item)new AliasedBlockItem(ModBlocks.ENDIFIED_VINES,
+            new FabricItemSettings().food(ModFoodComponents.END_BERRIES)));
     public static final Item RAW_SULFUR = registerItem("raw_sulfur", new Item(new FabricItemSettings()));
     public static final Item SULFUR_DUST = registerItem("sulfur_dust", new Item(new FabricItemSettings()));
 

@@ -41,8 +41,8 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.CAVE_VINES).pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block ENDIFIED_DAHLIA = registerBlock("endified_dahlia",
-            new EndifiedDahliaBlock(StatusEffects.DARKNESS, 2, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()
-                    .sounds(BlockSoundGroup.FLOWERING_AZALEA).strength(3.0f,9.0f)));
+            new EndifiedDahliaBlock(FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()
+                    .sounds(BlockSoundGroup.FLOWERING_AZALEA).strength(3.0f,9.0f).dynamicBounds()));
     public static final Block POTTED_ENDIFIED_DAHLIA = Registry.register(Registries.BLOCK, new Identifier(Endified.MOD_ID, "potted_endified_dahlia"),
             new FlowerPotBlock(ENDIFIED_DAHLIA, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque().breakInstantly()));
 

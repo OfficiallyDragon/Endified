@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> ORE_DETECTOR_DETECTABLE_BLOCKS = createTag("ore_detector_detectable_blocks");
+        public static final TagKey<Block> DAHLIA_PLACEABLE = createTag("dahlia_placeable");
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(Endified.MOD_ID, name));
         }
