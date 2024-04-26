@@ -32,6 +32,8 @@
   "block.endified.end_stone_wall": "End Stone Wall",
   "block.endified.endified_dahlia": "Endified Dahlia",
 
+  "sounds.endified.ore_detector_found_ore": "Ore Detector Chime",
+
   "itemgroup.endified_tools": "Endified Tools",
   "itemgroup.endified_plants": "Endified Organics",
   "itemgroup.endified_blocks": "Endified Blocks",

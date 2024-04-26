@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -21,7 +22,6 @@ public class ModItems {
     public static final Item ENDINIUM_SCRAP_3 = registerItem("endinium_scrap_3", new Item(new FabricItemSettings()));
     public static final Item ENDINIUM_SCRAP_4 = registerItem("endinium_scrap_4", new Item(new FabricItemSettings()));
     public static final Item ENDINIUM_CARBIDE = registerItem("endinium_carbide", new Item(new FabricItemSettings()));
-    public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings().maxDamage(100)));
     public static final Item END_BERRIES = registerItem("end_berries", (Item)new AliasedBlockItem(ModBlocks.ENDIFIED_VINES,
             new FabricItemSettings().food(ModFoodComponents.END_BERRIES)));
     public static final Item RAW_SULFUR = registerItem("raw_sulfur", new Item(new FabricItemSettings()));
@@ -37,6 +37,8 @@ public class ModItems {
             new SwordItem(ModToolMaterial.ENDINIUM, 3, -2.4f, new  FabricItemSettings()));
     public static final Item ENDINIUM_HOE = registerItem("endinium_hoe",
             new HoeItem(ModToolMaterial.ENDINIUM, -4, 0f, new  FabricItemSettings()));
+    public static final Item ORE_DETECTOR = registerItem("ore_detector", new OreDetectorItem(new FabricItemSettings().maxDamage(50)));
+
 
     public static final Item ENDINIUM_HELMET = registerItem("endinium_helmet",
             new ModArmorItem(ModArmorMaterials.ENDINIUM, ArmorItem.Type.HELMET, new  FabricItemSettings()));

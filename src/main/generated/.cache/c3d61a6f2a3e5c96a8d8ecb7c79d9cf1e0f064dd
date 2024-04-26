@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-25T14:16:43.8023031	Endified/Model Definitions
+// 1.20.1	2024-04-26T20:44:29.0003443	Endified/Model Definitions
 29e22f841cc8ba185e51f9d917a85d0191962811 assets\endified\models\item\raw_sulfur.json
 0e8d3f4759df21890d298bb71c571618afceb205 assets\endified\models\item\endinium_block.json
 4cbe32fc28aae923b85f9d8d27f4e6c58c5dbc60 assets\endified\models\block\end_stone_stairs_inner.json
@@ -42,8 +42,8 @@ cbfa891969a60026b5b533936b114335604369ec assets\endified\models\item\endinium_ch
 d43d3803a8b09982a4e62dee45ca0fe6b9991483 assets\endified\models\item\endinium_hoe.json
 1ad42f0bd3551fb2465da29a061cc28f2b92b1ed assets\endified\models\item\end_stone_slab.json
 ca744eb5c4dee29e916f2ff32d15a0603857ccd2 assets\endified\blockstates\endinium_block.json
-fb9c9aa187270eb398615043ddd97ecd63910729 assets\endified\models\item\end_berries.json
 bb17d090038352b1e6a4d2e9e57657401f1343ed assets\endified\models\item\endinium_chestplate.json
+fb9c9aa187270eb398615043ddd97ecd63910729 assets\endified\models\item\end_berries.json
 c5852e5f4742cc7e6835d9c4c3f0ef35c7c7bd40 assets\endified\models\item\endinium_boots_iron_trim.json
 28ddb0c9058a7810c2ecfc967c7dfea61f930373 assets\endified\models\item\endinium_helmet_amethyst_trim.json
 cfea9d16d2674212bdfe5e0672a9df3dc0f99fe7 assets\endified\models\block\end_stone_wall_post.json
@@ -80,8 +80,8 @@ f55546b51ecf55469fa71c2dbfcd46b3463f818a assets\endified\blockstates\end_stone_s
 356b1aafacf2bae85f074ef7569dd8603b14901c assets\endified\models\item\endinium_chestplate_gold_trim.json
 98d8810ad56f3e629809a45ae0119e71df12032b assets\endified\blockstates\endified_vines_plant.json
 7dcb7758dd77f3348f0296975bc2e37cabb3a52e assets\endified\models\item\endinium_boots_quartz_trim.json
-f9e93674e39563b48f423de20fc48b00f3fc6f55 assets\endified\models\item\endinium_helmet_lapis_trim.json
 52ba951bf628a9b72d96168ecc08a9c03c6f07a8 assets\endified\models\item\endinium_helmet.json
+f9e93674e39563b48f423de20fc48b00f3fc6f55 assets\endified\models\item\endinium_helmet_lapis_trim.json
 646bf046325658c2b4fe75815b36eb3b10f7c2e8 assets\endified\models\item\endinium_debris.json
 48a05fc4c28f53422b50783499d0368b6a86eead assets\endified\models\block\endified_vines.json
 e15905959ec2e80c797ac2fdb2c94cff013c4caf assets\endified\models\item\endinium_boots_gold_trim.json

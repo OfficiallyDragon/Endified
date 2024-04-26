@@ -1,0 +1,8 @@
+{
+  "ore_detector_found_ore": {
+    "subtitle": "sounds.endified.ore_detector_found_ore",
+    "sounds": [
+      "endified:ore_detector_found_ore"
+    ]
+  }
+}

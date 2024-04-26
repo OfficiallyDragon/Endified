@@ -1,11 +1,13 @@
 package me.officiallydragon.endified.item.custom;
 
+import me.officiallydragon.endified.sound.ModSounds;
 import me.officiallydragon.endified.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
@@ -28,6 +30,8 @@ public class OreDetectorItem extends Item {
                 if(isValuabeBlock(state)) {
                     outputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
                     foundBlock = true;
+
+                    context.getWorld().playSound(null, positionClicked, ModSounds.ORE_DETECTOR_FOUND_ORE, SoundCategory.BLOCKS);
 
                     break;
                 }
